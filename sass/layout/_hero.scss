@@ -1,0 +1,135 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/abstracts" as *; 
+
+.hero {
+    background-image: url("/img/beauty-woman.png");
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 200px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top -100px right -10px;
+    display: flex;
+
+    &__content {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 80px;
+        color: $dark-blue;
+        margin-bottom: 32px;
+    }
+
+    &__description {
+        font-size: 24px;
+        font-weight: 400;
+        color: $gray;
+        line-height: 40px;
+        margin-bottom: 56px;
+    }
+
+    &__actions {
+        margin-bottom: 90px;
+
+        ul {
+            @include reset-list();
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .button {
+            @include button ()
+        }
+
+        .button-play {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+
+            img {
+                background-color: white;
+                padding: 10px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__numbers {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 32px;
+        width: 643px;
+
+        &-data {
+            width: 145px;
+
+            &-icon {
+                width: 72px;
+                height: 72px;
+                margin-bottom: 24px;
+            }
+
+            &-number {
+                font-size: 36px;
+                font-weight: 500;
+                color: $dark-blue;
+                margin-bottom: 16px;
+            }
+
+            &-description {
+                font-size: 18px;
+                font-weight: 400;
+                color: $gray;
+            }
+
+        }
+
+    }
+
+    &__opinion {
+
+        &-1, &-2 {
+            width: 405px;
+            height: 247px;
+            padding: 24px;
+            border-radius: 16px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        
+        &-text {
+            font-size: 18px;
+            font-weight: 400;
+            color: $black;
+            margin-bottom: 8px;
+        }
+
+        &-author {
+            font-size: 18px;
+            font-weight: 700;
+            color: $dark-blue;
+        }
+
+        &-1 {
+            position: absolute;
+            right: 50px;
+            top: 330px;
+        }
+
+        &-2 {
+            position: absolute;
+            right: 200px;
+            top: 630px;
+            backdrop-filter: blur(5px);
+        }
+
+    }
+}

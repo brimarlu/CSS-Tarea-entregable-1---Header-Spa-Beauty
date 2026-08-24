@@ -1,0 +1,39 @@
+@use "../abstracts/abstracts" as *; 
+
+nav {
+    * {
+        @include reset-list(); 
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $dark-blue;
+        gap: 36px;   
+    }
+}
+
+.nav__main {
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 80px;
+}
+
+.nav__search-purchase {
+    img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.nav__sign-in-out {
+    margin-right: 80px;
+    font-size: 16px;
+    font-weight: 400;
+
+    .sign-in {
+        text-decoration: underline;
+    }
+
+    .sign-up {
+        @include button ()
+    }
+}

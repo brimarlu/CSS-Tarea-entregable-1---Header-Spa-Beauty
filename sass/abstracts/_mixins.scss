@@ -1,4 +1,4 @@
-@use "variables";
+@use "../abstracts/variables" as *;
 
 @mixin breakpoint($bp) {
   @if $bp == tablet {
@@ -24,4 +24,19 @@
       @content;
     }
   }
+}
+
+@mixin reset-list () {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button () {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: $dark-blue;
+    color: white;
+    border-radius: 28px;
+    text-decoration: none;
 }

@@ -1,51 +1,106 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Tarea entregable 1 - Header Spa & Beauty</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Tarea entregable 1 - Header Spa & Beauty</title>
+
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800&display=swap" rel="stylesheet">
+
+    </head>
+
   <body>
-   
-    <header>
-        <a href="" class="header__logo">
-            <img src="/img/glowqueen.svg" width="175"  alt="GlowQueen Logo">
-        </a>
+       
+      <main>
+        <header>
+            <a href="" class="header__logo">
+                <img src="/img/glowqueen.svg" width="212"  alt="GlowQueen Logo">
+            </a>
 
-        <nav class="nav__main">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Facilities</a></li>
-                <li><a href="">More <img src="/img/chevron-down.svg" alt=""></a></li>
-            </ul>
-        </nav>
+            <nav class="nav__main">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Facilities</a></li>
+                    <li><a href="">More<img src="/img/chevron-down.svg" alt=""></a></li>
+                </ul>
+            </nav>
+    
+            <nav class="nav__search-purchase">
+                <ul>
+                    <li><a href=""><img src="/img/search.svg" alt=""></a></li>
+                    <li><a href=""><img src="/img/bag.svg" alt=""></a></li>
+                </ul>
+            </nav>
+    
+            <nav class="nav__sign-in-out">
+                <ul>
+                    <li><a href="" class="sign-in">Sign In</a></li>
+                    <li><a href="" class="sign-up">Sign Up</a></li>
+                </ul>
+            </nav>
 
-        <nav class="nav__search-purchase">
-            <ul>
-                <li><a href=""><img src="/img/search.svg" alt=""></a></li>
-                <li><a href=""><img src="/img/bag.svg" alt=""></a></li>
-            </ul>
-        </nav>
+        </header>
 
-        <nav class="nav__sign-in-out">
-            <ul>
-                <li><a href="" class="button">Sign In</a></li>
-                <li><a href="" class="button">Sign Up</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <main>
         <div class="hero">
-            
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Bring back the beauty and glow of your skin
+                </h1>
+                <p class="hero__description">
+                    We provide you various treatments from head to toe using the best product, advanced technology, and affordable price
+                </p>
+                <div class="hero__actions">
+                    <ul>
+                        <li><a class="button" href="">Book Now</a></li>
+                        <li><a class="button-play" href=""> <img src="/img/play.svg" alt=""> Watch Video</a></li>
+                    </ul>
+                </div>
+
+                <div class="hero__numbers">
+                    <div class="hero__numbers-data">
+                        <img class="hero__numbers-data-icon" src="/img/icon-treatment.svg" alt="">
+                        <h2 class="hero__numbers-data-number">15+</h2>
+                        <p class="hero__numbers-data-description">Special Treatment</p>
+                    </div>
+                    <div class="hero__numbers-data">
+                        <img class="hero__numbers-data-icon" src="/img/icon-therapist.svg" alt="">
+                        <h2 class="hero__numbers-data-number">25+</h2>
+                        <p class="hero__numbers-data-description">Professional Therapist</p>
+                    </div>
+                    <div class="hero__numbers-data">
+                        <img class="hero__numbers-data-icon" src="/img/icon-formula.svg" alt="">
+                        <h2 class="hero__numbers-data-number">100%</h2>
+                        <p class="hero__numbers-data-description">Herbal <br>Cream Formula</p>
+                    </div>
+                </div>
+            </div>
+                       
+
+            <div class="hero__opinion">
+                <div class="hero__opinion-1">
+                    <img class="hero__opinion-quotes" src="/img/quotes.svg" alt="">
+                    <p class="hero__opinion-text">I have a regular schedule to take treatment from GlowQueen, they gave me the best service and treatment ever to maintain the beauty and health of my skin</p>
+                    <h3 class="hero__opinion-author">Sophia Princeton</h3>
+                </div>
+
+                <div class="hero__opinion-2">
+                    <img class="hero__opinion-quotes" src="/img/quotes.svg" alt="">
+                    <p class="hero__opinion-text">For the past few years, I've had a hard time finding the right place for skin care to deal with my complicated skin condition, thank God I found GlowQueen to treat my skin</p>
+                    <h3 class="hero__opinion-author">Tamara Jules</h3>
+                </div>                
+
+            </div>
+
 
         </div>
 
     </main>
 
-
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
