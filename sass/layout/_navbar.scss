@@ -15,12 +15,20 @@ nav {
     font-size: 18px;
     font-weight: 400;
     margin-right: 80px;
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 .nav__search-purchase {
     img {
         width: 32px;
         height: 32px;
+    }
+
+    a:hover {
+        transform: scale(1.2);
     }
 }
 
@@ -30,10 +38,14 @@ nav {
     font-weight: 400;
 
     .sign-in {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     .sign-up {
         @include button ()
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 }
